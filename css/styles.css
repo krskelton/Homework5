@@ -1,0 +1,98 @@
+/*@author Kristin Skelton*/
+
+/*Background image inserted into the body of the page*/
+body {
+	margin: 0;
+	background-image: url('images/musician-w-logo.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: absolute;
+	height: 100%;
+	font-family: 'Muli', sans-serif;
+}
+
+/*Styling for the side image with the menu items*/
+img {
+	position: absolute;
+	margin-left: 0;
+	margin-right: 0;
+	height: 100%;
+}
+
+
+/*Styling for clear divs that overlay the menu images*/
+.about-tag {
+	z-index:100;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 50px;
+	height: 25%;
+	width: 30%;
+	background-color: transparent; 
+
+}
+
+.prices-tag {
+	z-index:100;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 300px;
+	height: 25%;
+	width: 30%;
+	background-color: transparent;
+
+}
+
+.contact-tag {
+	z-index:100;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 500px;
+	height: 25%;
+	width: 30%;
+	background-color: transparent;
+
+}
+
+
+/*Styling for form in the contact dialog box*/
+label {
+	display: inline-block;
+	text-align: right;
+	width: 20%;
+	margin-right: 20px;
+}
+
+label:before { 
+	content: '\a' ; 
+	white-space: pre; 
+}
+
+input#button {
+	display: block;
+	margin: auto;
+	width: 100px;
+
+}
+
+input {
+	width: 40%;
+	height: 20px;
+
+}
+
+/*Styling for the borders of the input fields.*/
+.errorInput {
+	border: solid rgb(255,51,51);
+}
+
+.addInput {
+	border: solid rgb(57,255,20);
+}
+
+.noBorder {
+	border: none;
+}
+
+
+

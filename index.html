@@ -1,0 +1,81 @@
+<!-- Kristin Skelton index.html 
+This file creates a homepage for the Red Turtle Music website.
+The sections one this page will be visible when the menu choice is selected. -->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery Practice</title>
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
+  		<link rel="stylesheet" type="text/css" href="css/styles.css">
+  		<link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+ 		<script src="js/jquery.js"></script>
+  		<script src="js/jquery-ui.js"></script>
+		
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+
+	<body>
+		<div id="content">
+			
+			<!-- The sidebar contains transparent divs over the menu image -->
+			<div id="sideBarMenu">
+				<img src="css/images/photos-v3.png">
+				
+					<a class="about-tag" href="#" title="about"></a>
+					<a class="prices-tag" href="#" title="prices"></a>
+					<a class="contact-tag" href="#" title="contact"></a>
+			</div>
+			
+			<!-- The confirm section will display a dialog box after 10 seconds of working on the Contact form. -->
+			<div id="confirm" title="Courtesy Warning">
+				<p>You're session will soon expire.</p>
+			</div>
+			
+			<!-- The about section will display in a dialog box when the section is selected in the menu. -->
+			<div class="about" title="About Us">
+				<p>Music lessons delivered to your door! All of our lessons are taught in the home of the student. There they can focus on what they're learning without the distraction of other lessons in a room next door, or an unfamiliar space.</p>
+				<iframe src="http://player.vimeo.com/video/50893156?portrait=0&byline=0&color=a6a6a6&badge=0&title=0" width="100%" height = "80%" frameborder="0"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+			</div>
+			
+			<!-- The prices section will display in a dialog box when the section is selected in the menu. -->
+			<div class="prices" title="Prices">
+				<p>One hour in-home lessons are $54.99 each, charged in pairs of two lessons at a time. Your satisfaction is 100% guaranteed and all purchases and lesson credits are 100% refundable.</p>
+			</div>
+			
+			<!-- The contact form will display in a dialog box when the section is selected in the menu. This event will also trigger the timer for the confirm dialog box. -->
+			<form class="contactForm" name="contactForm" action="" method="get">
+				<h2>Contact Us</h2>
+				
+				<!-- Input for name. If the user did not enter a name an error message will display. -->
+				<label for="name">Name: </label>
+				<input id="name" type="text" name="name" title= "Your Name"/>
+				<span id="nameError">*</span><br>
+
+				<!-- Input for address. If the user did not enter an address an error message will display. -->
+				<label for="address">Address: </label>
+				<input id="address" type="text" name="address" title="999 Street Address, City, State, ZipCode" />
+				<span id="addressError">*</span><br>
+
+				<!-- Input for phone number. If the user did not enter a phone number an error message will display. -->
+				<label for="phone">Phone Number: </label>
+				<input id="phone" type="text" name="phone" title="9991119999" />
+				<span id="phoneError">*</span><br>
+
+				<!-- Input for email. If the user did not enter a email or if it is not a valid email address an error message will display. -->
+				<label for="email">Email: </label>
+				<input id="email" type="email" name="email" title="myemail@domain.com" />
+				<span id="emailError">*</span><br>
+
+				<br><br>
+				<!-- Button to submit the data. -->
+				<span id="submitMessage"></span><br>
+				
+			</form>
+		</div>
+
+	</body>
+</html>
